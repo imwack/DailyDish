@@ -1,0 +1,89 @@
+/**index.wxss**/
+
+.pageView {
+  background-color: #f0f0f0;
+}
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.bodyFirstView {
+  margin-top: 10px;
+  position: relative;
+  background: #fff;
+  min-height: 50px;
+  color: #808080;
+  font-size: 0.9em;
+  height: 100%;
+  line-height: 50px;
+}
+
+.classify-item-title image {
+  height: 45px;
+  width: 45px;
+  padding-right: 3%;
+}
+
+.classify-item_1 {
+  float: left;
+  width: 45%;
+  padding-left: 5%;
+  margin-right: 3%;
+  border-right: solid 0.5px #f0f0f0;
+}
+.classify-item_1 image{
+  float: left;
+}
+.classify-item_2 image{
+  float: left;
+}
+.bodySecondView{
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.menuTitleView{
+  width: 100%;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menuTitle{
+  font-size: 1.1em;
+  color: indianred;
+  font-weight: bold;
+  padding-left: 5%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.dish-img{
+  min-width: 250px;
+  width: 100%;
+}
+.CommntView{
+  position:absolute;
+  left:0;
+  bottom:1ch;
+  background: rgba(0,0,0,0.1) !important;
+  padding-bottom: 3%;
+  height: 20px;
+  width: 30%;
+  text-align: center;
+}
+.breComment{
+  line-height: 100%;
+  font-size: 0.9em;
+}
+.image-position{
+  position:relative;
+  margin-bottom: 3%;
+}
+

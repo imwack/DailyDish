@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="pageView">
+  <view class="headerView">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
+      <block wx:for="{{titleImage}}" wx:key="id" wx:for-index="index">
+        <swiper-item bindtap="itemClick">
+          <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="classify bodyView">
+    <view class="bodyFirstView">
+      <navigator class="classify-item_1"  url="../rank/rank" open-type="redirect">
+        <view class="classify-item-title">
+          <image src="../../images/ranking.jpg"></image>
+          <view class="ranking">人气排行</view>
+        </view>
+      </navigator>
+      <navigator class="classify-item_2"  url="../msgBoard/msg" open-type="redirect">
+        <view class="classify-item-title">
+          <image src="../../images/comment.jpg"></image>
+          <view class="comment">我有话说</view>
+        </view>
+      </navigator>
+    </view>
+    <view class="bodySecondView">
+      <view class="menuTitleView">
+        <p class="menuTitle">今日菜单</p>
+      </view>
+      <view class="dish-classify">
+        <view class="image-position">
+          <image src="../../images/breakfast.jpg" class="dish-img"></image>
+          <view class="CommntView">
+            <p class="breComment">暖心早餐</p>
+          </view>
+        </view>
+        <navigator url="../dishDetail/lunch" open-type="redirect">
+          <view class="image-position">
+            <image src="../../images/lunch.jpg" class="dish-img"></image>
+            <view class="CommntView">
+              <p class="breComment">精美午餐</p>
+            </view>
+          </view>
+        </navigator>
+        <view class="image-position">
+          <image src="../../images/dinner.jpg" class="dish-img"></image>
+          <view class="CommntView">
+            <p class="breComment">悠然晚餐</p>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
