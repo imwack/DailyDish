@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/dishDetail/lunch",
+    "pages/msgBoard/msg",
+    "pages/rank/rank"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "DailyDish",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/menu-unclick.png",
+      "selectedIconPath":"images/menu-click.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "发现",
+      "iconPath": "images/find-unclick.png",
+      "selectedIconPath": "images/find-click.png"
+    },{
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "images/mine-unclick.png",
+      "selectedIconPath": "images/mine-click.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
