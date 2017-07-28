@@ -4,13 +4,16 @@
     "pages/logs/logs",
     "pages/personal/personal",
     "pages/dishDetail/lunch",
-    "pages/msgBoard/msg",
-    "pages/rank/rank"
+    "pages/dishDetail/Breakfast/breakfast",
+    "pages/dishDetail/Dinner/dinner",
+    "pages/index/feedback/rank/rank",
+    "pages/index/feedback/comments/comments",
+    "pages/discover/discover"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "DailyDish",
+    "navigationBarTitleText": "西瓜食堂助手",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -20,7 +23,7 @@
       "iconPath": "images/menu-unclick.png",
       "selectedIconPath":"images/menu-click.png"
     },{
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/discover/discover",
       "text": "发现",
       "iconPath": "images/find-unclick.png",
       "selectedIconPath": "images/find-click.png"

@@ -34,7 +34,7 @@
             <view class="dish-item">
               <view class="dish-item-wrp">
                 <view class="dish-item-pic">
-                  <image src="../../images/dinner.jpg"/>
+                  <image id="dishImage" src="{{dish.Pic}}" bindtap="TestClick"/>
                 </view>
                 <view class="dish-info">
                   <view class="dish-item-info" style="">
@@ -47,14 +47,19 @@
                     </view>
                   </view>
                   <view class="dish-item-commentInfo">
-                    <view class="item-button-love">
-                       <image src="../../images/love.png"></image>                     
+                    <view class="comment-item-button" bindtap="click_like" id="{{dish.Name}}">
+                      <image id="comment-image" class="comment-item-image" src="{{dish.LikePic}}"></image>
+                      <text>{{dish.Like}}</text>
                     </view>
-                    <view class="comment-like">
-                      <text>{{dish.like}}</text>
+                    <view class="comment-item-button" bindtap="click_dislike" id="{{dish.Name}}">
+                      <image id="comment-image" class="comment-item-image" src="../../images/bad.png"></image>
+                      <text>{{dish.DisLike}}</text>
                     </view>
-                    <view>
-                       <text>1</text>
+                    <view class="comment-item-button">
+                    <!--
+                      <image id="comment-image" class="comment-item-image" src="../../images/comments.png"></image>
+                      <text>{{dish.Comment}}</text>
+                      -->
                     </view>
                   </view>
                 </view>

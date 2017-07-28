@@ -1,66 +1,37 @@
-// pages/personal/personal.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
+var app = getApp()
+Page( {
   data: {
-  
+    userInfo: {},
+    userListInfo: [ {
+      icon: '../../images/love-3.png',
+      text: '我喜欢的',
+      isunread: true,
+      unreadNum: 2
+    }, {
+        icon: '../../images/star.png',
+        text: '我的收藏',
+        isunread: false,
+        unreadNum: 2
+      },{
+        icon: '../../images/question.png',
+        text: '常见问题'
+      }, {
+        icon: '../../images/pencil.png',
+        text: '提供建议'
+      },{
+        icon: '../../images/contact.png',
+        text: '联系我们'
+      }]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  onLoad: function() {
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo( function( userInfo ) {
+      //更新数据
+      that.setData( {
+        userInfo: userInfo
+      })
+    })
   }
 })

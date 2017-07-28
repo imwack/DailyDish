@@ -1,0 +1,178 @@
+
+.index{
+  width: 100%;
+  height: 100%;
+}
+.nav-tab{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: solid #f0f0f0 2px;
+}
+.nav-tab-left{
+  height: 100%;
+  width: 20%;
+  line-height: 60rpx;
+  margin-left: 5%;
+}
+.nav-tab-center{
+  width: 60%;
+  line-height: 60rpx;
+  text-align: center;
+}
+.nav-tab-right{
+  height: 80%;
+  width: 20%;
+  line-height: 60rpx;
+  margin-left: 15%;
+}
+.nav-title-return{
+  width: 40%;
+  height: 70%;
+}
+.nav-title-search{
+  width: 40%;
+  height: 100%;
+}
+/*菜单wrap*/
+.menu-wrp{
+  overflow:hidden;
+  width:100%;
+  height: 100%;
+  display:flex;
+  background-color:white;
+  flex-direction:row;
+}
+/*左侧菜单*/
+#bc_white{
+  background-color: #FFFFFF;
+  border-right: none;
+}
+.menu-item{
+  height:90rpx;
+  justify-content: center;
+  align-items: center;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fcfcfc;
+}
+.menu-item-wrp{
+  border-right: solid #E0E0E0 1px;
+  border-top: solid #E0E0E0 1px;
+}
+.m-item-title{
+  font-size: 24rpx;
+  color: D0D0D0;
+}
+.left-side{
+  width: 25%;
+  background-color: #f0f0f0;
+  flex-direction:column;
+  /*border-right: solid #E0E0E0 1px;*/
+}
+/*右侧菜品*/
+.dish-category-title{
+  font-size: 28rpx;
+  color: #000;
+  padding-left: 10rpx;
+  background-color: #f0f0f0;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.right-side{
+  width: 75%;
+  height: 1500rpx;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+.menu-footer{
+  height: 300rpx;
+}
+/*菜品信息*/
+.dish-item{
+  width: 100%;
+  height: 180rpx;
+  border-bottom: solid #E0E0E0 1px;
+}
+.dish-item-wrp{
+  width:100%;
+  height: 100%;
+  display:flex;
+}
+.dish-item-pic{
+  width:30%;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.dish-item-pic image{
+   width: 80%;
+   height: 80%;
+}
+#dishImage{
+  width: 80%;
+  height: 120rpx;
+}
+.dish-info{
+  width: 75%;
+  height: 100%;
+}
+.dish-item-info{
+  /*padding-left: 5%;*/
+  padding-top: 5%;
+  min-height: 20rpx;
+  width: 100%;
+  height: 50rpx;
+}
+.dish-item-commentInfo{
+  height: 60rpx;
+  width: 100%;
+}
+.dish-item-commentInfo item-button{
+  display: inline-block;
+}
+.comment-item-button{
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.comment-item-image{
+  height: 40%;
+  width: 18%;
+}
+.comment-item-button text{
+  padding-left: 5%;
+  height: 40%;
+  width: 15%;
+  color: #E9E9E9;
+  font-size: 25rpx;
+}
+.dish-item-name{
+  color: #454545;
+  font-size: 26rpx;
+}
+.dish-item-nameInfo{
+  float: left;
+  width: 70%;
+}
+.dish-item-priceInfo{
+  width: 30%;
+  float: right;
+}
+.dish-item-money{
+  color: #14CCC3;
+  font-size: 26rpx;
+}
+.dish-item-unit{
+  color: #E0E0E0;
+  font-size: 22rpx;
+}
+.dish-footer{
+  height: 400rpx;
+}
+
+
+
+
+
+

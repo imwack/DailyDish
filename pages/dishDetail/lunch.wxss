@@ -1,7 +1,3 @@
-.image{
-  width: 100%;
-  height: 100%
-}
 .index{
   width: 100%;
   height: 100%;
@@ -102,6 +98,7 @@
   width:100%;
   height: 100%;
   display:flex;
+  flex-direction: row;
 }
 .dish-item-pic{
   width:30%;
@@ -124,16 +121,31 @@
   height: 50rpx;
 }
 .dish-item-commentInfo{
-  height: 50rpx;
+  height: 60rpx;
   width: 100%;
-   display: flex;
 }
-.dish-item-commentInfo item-button{
-  display: inline-block;
+
+.comment-item-button{
+  float: left;
+  width: 33%;
+  height: 100%;
 }
-.dish-item-commentInfo view{
-  height: 40rpx;
-  
+/*.comment-item-image{
+  min-height: 40%;
+  width: 18%;
+  height: 15rpx;
+}*/
+#comment-image{
+  width: 18%;
+  height: 18rpx;
+  min-height: 40%;
+}
+.comment-item-button text{
+  padding-left: 5%;
+  height: 40%;
+  width: 15%;
+  color: #E9E9E9;
+  font-size: 25rpx;
 }
 .dish-item-name{
   color: #454545;
@@ -142,6 +154,10 @@
 .dish-item-nameInfo{
   float: left;
   width: 70%;
+}
+#dishImage{
+  width: 80%;
+  height: 120rpx;
 }
 .dish-item-priceInfo{
   width: 30%;
@@ -159,20 +175,8 @@
   height: 400rpx;
 }
 
-.item-button-love image{
-  width: 15px;
-  height: 15px;
-}
-.comment-like{
-  width: 100%;
-  height: 100%;
-}
-.comment-like text{
-  margin-left: 5%;
-  font-size: 15px;
-  width: 100%;
-  height: 100%;
-  color: #000;
-}
+
+
+
 
 

@@ -11,13 +11,13 @@
   </view>
   <view class="classify bodyView">
     <view class="bodyFirstView">
-      <navigator class="classify-item_1"  url="../rank/rank" open-type="redirect">
+      <navigator url="../index/feedback/rank/rank" open-type="redirect" class="classify-item_1">
         <view class="classify-item-title">
           <image src="../../images/ranking.jpg"></image>
           <view class="ranking">人气排行</view>
         </view>
       </navigator>
-      <navigator class="classify-item_2"  url="../msgBoard/msg" open-type="redirect">
+      <navigator url="../index/feedback/comments/comments" open-type="redirect" class="classify-item_2">
         <view class="classify-item-title">
           <image src="../../images/comment.jpg"></image>
           <view class="comment">我有话说</view>
@@ -29,12 +29,14 @@
         <p class="menuTitle">今日菜单</p>
       </view>
       <view class="dish-classify">
-        <view class="image-position">
-          <image src="../../images/breakfast.jpg" class="dish-img"></image>
-          <view class="CommntView">
-            <p class="breComment">暖心早餐</p>
+        <navigator url="../dishDetail/Breakfast/breakfast" open-type="redirect">
+          <view class="image-position">
+            <image src="../../images/breakfast.jpg" class="dish-img"></image>
+            <view class="CommntView">
+              <p class="breComment">暖心早餐</p>
+            </view>
           </view>
-        </view>
+        </navigator>
         <navigator url="../dishDetail/lunch" open-type="redirect">
           <view class="image-position">
             <image src="../../images/lunch.jpg" class="dish-img"></image>
@@ -43,12 +45,14 @@
             </view>
           </view>
         </navigator>
-        <view class="image-position">
-          <image src="../../images/dinner.jpg" class="dish-img"></image>
-          <view class="CommntView">
-            <p class="breComment">悠然晚餐</p>
+        <navigator url="../dishDetail/Dinner/dinner" open-type="redirect">
+          <view class="image-position">
+            <image src="../../images/dinner.jpg" class="dish-img"></image>
+            <view class="CommntView">
+              <p class="breComment">悠然晚餐</p>
+            </view>
           </view>
-        </view>
+        </navigator>
       </view>
     </view>
   </view>

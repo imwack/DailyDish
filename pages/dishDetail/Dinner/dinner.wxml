@@ -1,0 +1,72 @@
+<view class="index">
+  <view class="nav-tab">
+    <view class="nav-tab-left" bindtap="navBack">
+      <image class="nav-title-return" src="../../../images/left.png"></image>
+    </view>
+    <view class="nav-tab-center" hover-class="navigator-hover">晚餐</view>
+    <view class="nav-tab-right">
+      <image class="nav-title-search" src="../../../images/search.png"></image>
+    </view>
+  </view>
+  <view class="menu-wrp">
+    <scroll-view scroll-y="true" class="left-side" scroll-into-view="{{leftScroll}}">
+      <!--菜单列表-->
+      <block wx:for="{{menus}}" wx:key="id" wx:for-item="menu">
+        <view class="menu-item" data-id="{{menu.Id}}" data-tag="{{menu.Tag}}" bindtap="selectMenu">
+          <view class="menu-item-wrp">
+            <!--<view>
+              
+            </view>-->
+            <view>
+              <text class="m-item-title">晚餐</text>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="menu-footer"></view>
+    </scroll-view>
+    <scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="right-side">
+      <view class="dish-header"></view>
+      <block wx:for="{{menus}}" wx:key="id" wx:for-item="menu">
+        <view>
+          <view id="{{menu.Tag}}" class="dish-category-title">{{menu.Name}}</view>
+          <block wx:for="{{menu.Dishes}}" wx:key="id" wx:for-item="dish">
+            <view class="dish-item">
+              <view class="dish-item-wrp">
+                <view class="dish-item-pic">
+                  <image id="dishImage" src="../../../images/dinner.jpg"/>
+                </view>
+                <view class="dish-info">
+                  <view class="dish-item-info" style="">
+                    <view class="dish-item-nameInfo">
+                      <text class="dish-item-name">{{dish.Name}}</text>
+                    </view>
+                    <view class="dish-item-priceInfo">
+                      <text class="dish-item-money">¥{{dish.Price}}</text>
+                      <text class="dish-item-unit">/份</text>
+                    </view>
+                  </view>
+                  <view class="dish-item-commentInfo">
+                    <view class="comment-item-button">
+                      <image class="comment-item-image" src="../../../images/good.png"></image>
+                      <text>30</text>
+                    </view>
+                    <view class="comment-item-button">
+                      <image class="comment-item-image" src="../../../images/bad.png"></image>
+                      <text>1</text>
+                    </view>
+                    <view class="comment-item-button">
+                      <image class="comment-item-image" src="../../../images/comments.png"></image>
+                      <text>1</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </block>
+      <view class="dish-footer"></view>
+    </scroll-view>
+  </view>
+</view>
